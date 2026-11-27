@@ -26,17 +26,22 @@
 <main id="top">
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero" aria-label="Intro">
+    <canvas id="hero3d" aria-hidden="true"></canvas>
     <div class="grain"></div>
     <div class="hero-inner">
       <img src="logo.svg" alt="The Dialogue Co. logo" class="hero-logo" width="120" height="120">
       <p class="pixel hola">Hola! We are</p>
       <h1>Dialogue Co.</h1>
       <p class="mono tagline">Purposeful spaces to meet,<br>take part, and connect.</p>
-      <div class="cta-row">
-        <a href="#contact" class="btn lime">Design a gathering</a>
-        <a href="#formats" class="btn ghost">See how we play</a>
+    </div>
+    <div class="hero-switch">
+      <p class="hero-caption mono" aria-live="polite">The usual: panels, slides, polite applause. Zzz.</p>
+      <div class="toggle" role="group" aria-label="Compare event styles">
+        <button type="button" data-mode="0" aria-pressed="true">&#128564; The usual event</button>
+        <button type="button" data-mode="1" aria-pressed="false">&#127881; The Dialogue Co. way</button>
       </div>
+      <p class="hint pixel">Tip: click the people</p>
     </div>
     <span class="star" aria-hidden="true">&#10022;</span>
   </section>
@@ -201,5 +206,6 @@
   <span>Good experiences are remembered, shared and felt.</span>
 </footer>
 <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+<script type="module" src="hero3d.js"></script>
 </body>
 </html>

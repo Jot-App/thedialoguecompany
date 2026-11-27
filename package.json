@@ -1,0 +1,11 @@
+{
+  "name": "thedialoguecompany",
+  "private": true,
+  "scripts": {
+    "build": "esbuild src/hero3d.js --bundle --minify --format=esm --target=es2019 --outfile=hero3d.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "three": "^0.170.0"
+  }
+}
