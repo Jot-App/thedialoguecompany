@@ -56,7 +56,9 @@ h3{font-size:1.2rem;margin-bottom:.6rem}
 
 /* marquee */
 .marquee{background:var(--lime);border-block:2px solid var(--ink);overflow:hidden;white-space:nowrap}
-.track{display:inline-flex;gap:2rem;padding:.9rem 0;font-size:1.1rem;animation:scroll 22s linear infinite}
+.track{display:flex;width:max-content;padding:.9rem 0;font-size:1.1rem;animation:scroll 30s linear infinite}
+.group{display:flex;flex-shrink:0;min-width:100vw;justify-content:space-around}
+.group span{padding-right:2rem}
 @keyframes scroll{to{transform:translateX(-50%)}}
 
 /* cards */
